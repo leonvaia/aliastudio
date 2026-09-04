@@ -28,6 +28,7 @@ The deployable site is the `public/` directory. The build command only compiles 
 - Framework preset: `None`
 - Build command: leave blank (or use `exit 0`)
 - Build output directory: `public`
+- Workers deploy command: `npx wrangler deploy --assets ./public`
 
 The compiled CSS is committed with the HTML, so Cloudflare does not need Node, pnpm or a build step. Run `pnpm run build` locally after changing the SCSS, then commit the updated CSS.
 
