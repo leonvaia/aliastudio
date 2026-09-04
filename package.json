@@ -1,0 +1,12 @@
+{
+  "name": "aliastudio",
+  "private": true,
+  "scripts": {
+    "dev": "sass --watch src/scss/main.scss:public/assets/css/styles.css",
+    "build": "sass src/scss/main.scss:public/assets/css/styles.css --style=compressed --no-source-map",
+    "check": "node scripts/check-site.mjs"
+  },
+  "devDependencies": {
+    "sass": "^1.92.0"
+  }
+}
