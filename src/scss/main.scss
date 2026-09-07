@@ -60,10 +60,11 @@ p { margin: 0 0 1.2rem; }
 @media (max-width: 800px) {
   .menu-toggle { display: block; }
   .site-nav { display: none; position: absolute; top: 90px; left: 0; right: 0; padding: 1rem; background: $forest-dark; flex-direction: column; align-items: stretch; a { padding: .7rem calc((100vw - min(1120px, calc(100% - 2rem))) / 2); } &.is-open { display: flex; } }
-  .hero-grid, .split, .contact-grid, .flyers { grid-template-columns: 1fr; }
+  .hero-grid, .split, .contact-grid { grid-template-columns: 1fr; }
   .cards { grid-template-columns: 1fr; }
   .hero-image { max-width: 520px; }
   .footer-grid { grid-template-columns: 1fr; }
 }
+@media (max-width: 800px) and (orientation: portrait) { .flyers { grid-template-columns: 1fr; } }
 @media (max-width: 540px) { .gallery { grid-template-columns: 1fr; } .timeline li { grid-template-columns: 1fr; gap: .2rem; } .footer-bottom { flex-direction: column; } }
 @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } *, *::before, *::after { transition-duration: .01ms !important; } }
