@@ -73,6 +73,7 @@ p { margin: 0 0 1.2rem; }
 .posts { display: grid; gap: 1rem; }
 .post-card { padding: 1.5rem 0; border-top: 1px solid $line; time { color: $coral; font-size: .85rem; } h2 { margin: .25rem 0 .5rem; font-size: 1.7rem; } h2 a { text-decoration: none; } }
 .notice { padding: 1rem 1.2rem; background: #fff2cf; border-radius: .6rem; }
+.activity-notice { margin-top: clamp(1.5rem, 3vw, 2.5rem); border-left: 4px solid $gold; font-size: clamp(1.05rem, 2vw, 1.2rem); font-weight: 650; }
 .flyers { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); align-items: start; gap: clamp(1.25rem, 3vw, 2rem); }
 .flyer-card { margin: 0; padding: clamp(1rem, 2vw, 1.5rem); background: white; border: 1px solid $line; border-radius: 1rem; box-shadow: 0 12px 30px rgba($ink,.05); h2 { margin-bottom: .25rem; font-size: clamp(1.6rem, 3vw, 2.2rem); } p { margin-bottom: 1rem; } }
 .flyer-image-link { display: block; border-radius: .65rem; overflow: hidden; &:focus-visible { outline: 3px solid $coral; outline-offset: 3px; } img { width: 100%; } }
